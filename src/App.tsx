@@ -54,6 +54,7 @@ function App(): JSX.Element {
     setLetterPostion(() => letterPosition + 1);
     setCurrentLetter(() => inputStr[letterPosition + 1]);
     setCurrentObject(() => {
+      console.log(currentObject[currentLetter]);
       if (currentObject[currentLetter]) {
         console.log(currentObject[currentLetter]);
         return {
