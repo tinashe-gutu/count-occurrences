@@ -54,14 +54,7 @@ function App(): JSX.Element {
     setLetterPostion(() => letterPosition + 1);
     setCurrentLetter(() => inputStr[letterPosition + 1]);
     setCurrentObject(() => {
-      if (currentObject[currentLetter]) {
-        return {
-          ...currentObject,
-          [currentLetter]: currentObject[currentLetter]++,
-        };
-      } else {
-        return { ...currentObject, [currentLetter]: 1 };
-      }
+      return { ...currentObject, [currentLetter]: 1 };
     });
   }
 
