@@ -26,7 +26,6 @@ function App(): JSX.Element {
   }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    console.log("In handle change");
     setData(() => {
       setCurrentObject({});
       setLetterPostion(0);
