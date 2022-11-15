@@ -57,6 +57,10 @@ function App(): JSX.Element {
       console.log(currentObject[currentLetter]);
       if (currentObject[currentLetter]) {
         console.log(currentObject[currentLetter]);
+        console.log({
+          ...currentObject,
+          [currentLetter]: currentObject[currentLetter]++,
+        });
         return {
           ...currentObject,
           [currentLetter]: currentObject[currentLetter]++,
